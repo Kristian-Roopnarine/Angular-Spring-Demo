@@ -15,6 +15,11 @@ public class SpringBootDockerApplication {
 		return "Hello Docker world";
 	}
 
+	@RequestMapping("/test")
+	public String test(){
+		return "This is testing hot reload";
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootDockerApplication.class, args);
 	}
